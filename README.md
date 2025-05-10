@@ -47,6 +47,19 @@ R scripts to replicate simulation results in subsection 5.2 of the main text and
 
 To report errors, please contact <siao@ucdavis.edu>. Comments and suggestions are welcome.
 
+## Citation
+
+Please cite our paper ["Deep Fr\'echet regression"](https://arxiv.org/pdf/2307.05726).
+
+```         
+@article{iao2024deep,
+  title={Deep Fr$\backslash$'echet Regression},
+  author={Iao, Su I and Zhou, Yidong and M{\"u}ller, Hans-Georg},
+  journal={Journal of the American Statistical Association},
+  volumn={just accepted},
+  year={2024}
+}
+```
 ## References
 
 <div id="refs" class="references csl-bib-body hanging-indent"
