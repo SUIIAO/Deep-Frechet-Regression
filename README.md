@@ -49,7 +49,7 @@ To report errors, please contact <siao@ucdavis.edu>. Comments and suggestions ar
 
 ## Citation
 
-Please cite our paper "[Deep Fréchet regression](https://arxiv.org/pdf/2307.05726)".
+"[Deep Fréchet regression](https://arxiv.org/pdf/2307.05726)"
 
 ```         
 @article{iao2024deep,
@@ -60,13 +60,3 @@ Please cite our paper "[Deep Fréchet regression](https://arxiv.org/pdf/2307.057
   year={2024}
 }
 ```
-## References
-
-<div id="refs" class="references csl-bib-body hanging-indent"
-entry-spacing="0">
-
-<div id="ref-imbensxu" class="csl-entry">
-
-Iao, S.I., Zhou, Y. and Müller, H.G., 2025. Deep Fréchet Regression. Journal of the American Statistical Association, (just-accepted).
-
-</div>
