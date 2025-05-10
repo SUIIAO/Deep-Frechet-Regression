@@ -1,6 +1,6 @@
 # Deep Fréchet Regression
 
-This repository contains codes necessary to replicate **Iao, Zhou and Müller (2025+)**: “Deep Fréchet Regression”. The `DFR` functions in the `code` folder, short for Deep Fréchet Regression, are designed for analyzing metric space-valued response.
+This repository contains codes necessary to replicate **Iao, Zhou and Müller (2025+)**: “Deep Fréchet Regression”. The `DFR` functions in the `code` folder, short for Deep Fréchet Regression, are designed for modeling the relationship between multivariate predictors and metric space-valued responses.
 
 ## Folder Structure
 
