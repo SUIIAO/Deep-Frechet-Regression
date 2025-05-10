@@ -49,7 +49,7 @@ To report errors, please contact <siao@ucdavis.edu>. Comments and suggestions ar
 
 ## Citation
 
-Please cite our paper "[Deep Fr\'echet regression](https://arxiv.org/pdf/2307.05726)".
+Please cite our paper "[Deep Fréchet regression](https://arxiv.org/pdf/2307.05726)".
 
 ```         
 @article{iao2024deep,
