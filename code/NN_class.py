@@ -18,11 +18,11 @@ class Norm(nn.Module):
     
     # Learnable parameters for scaling (alpha) and shifting (bias)
     if axis == -2: # If normalizing by columns (Batch Norm style)
-      self.alpha = nn.Parameter(torch.ones(d)) # Scaling parameter
-      self.bias = nn.Parameter(torch.zeros(d)) # Bias parameter
+      self.alpha = nn.Parameter(torch.randn(d)) # Scaling parameter
+      self.bias = nn.Parameter(torch.randn(d)) # Bias parameter
     else: # If normalizing by rows (Layer Norm style)
-      self.alpha = nn.Parameter(torch.ones(d)) # Scaling parameter
-      self.bias = nn. Parameter(torch.zeros(d)) # Bias parameter
+      self.alpha = nn.Parameter(torch.randn(d)) # Scaling parameter
+      self.bias = nn. Parameter(torch.randn(d)) # Bias parameter
     
   def forward(self,x):
     # Get the size of the dimension we are normalizing over
@@ -75,15 +75,13 @@ class MLP(nn.Module):
 
 
   def forward(self, x):
-    # Pass input through the input layer and apply ReLU activation
-    x_ = F.relu(self.linear_1(x))
-    x_ = self.norm1(x_) # Apply normalization
+    # Pass input through the input layer, normalization and apply ReLU activation
+    x_ = F.relu(self.norm1(self.linear_1(x)))
     
     # Pass through each hidden layer with residual connections
     for i in range(self.layer):
       # Residual connection: add input to the output of the layer
-      x_ = x_ + F.relu(self.linear_hidden[i](self.drop[i](x_)))
-      x_ = self.linear_bn[i](x_) # Apply normalization
+      x_ = x_ + F.relu(self.linear_bn[i](self.linear_hidden[i](self.drop[i](x_))))
     
     # Pass through the output layer
     x_ = self.linear_out(x_)
