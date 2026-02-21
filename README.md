@@ -49,14 +49,17 @@ To report errors, please contact <siao@ucdavis.edu>. Comments and suggestions ar
 
 ## Citation
 
-The Full paper can be found in "[Deep Fréchet regression](https://arxiv.org/pdf/2307.05726)".
+The Full paper can be found in "[Deep Fréchet regression](https://www.tandfonline.com/doi/full/10.1080/01621459.2025.2507982)".
 
 ```         
-@article{iao2024deep,
+@article{iao2025dfr,
   title={Deep Fr\'echet Regression},
   author={Iao, Su I and Zhou, Yidong and M{\"u}ller, Hans-Georg},
   journal={Journal of the American Statistical Association},
-  volumn={just accepted},
-  year={2024}
+  volume={120},
+  number={551},
+  pages={1437--1448},
+  year={2025},
+  publisher={Taylor \& Francis}
 }
 ```
